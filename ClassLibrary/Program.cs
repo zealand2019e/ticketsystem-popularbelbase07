@@ -10,6 +10,9 @@ namespace ClassLibrary
             Car cr = new Car();
             cr.Price();
             cr.VehicleType();
+            MC mc =new MC();
+            mc.Price();
+            mc.VehicleType();
         }
     }
 }

@@ -1,10 +1,11 @@
+using System;
 using ClassLibrary;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CarUnitTest
 {
     [TestClass]
-    public class UnitTest1
+    public class UnitTest
     {
         [TestMethod]
         public void CarTest()
@@ -18,5 +19,19 @@ namespace CarUnitTest
             //Assert
             Assert.AreEqual(240, actual);
         }
+        [TestMethod]
+        public void MCTest()
+        {
+
+            //Arrange
+           MC mc =new MC();
+
+            //Act
+            decimal actual = mc.Price();
+            //Assert
+            Assert.AreEqual(125, actual);
+        }
     }
+
+   
 }

@@ -4,14 +4,14 @@ using System.Text;
 
 namespace ClassLibrary
 {
-    public class Car
+   public class MC :Car
     {
 
         /// <summary>
         /// Properties for car class.
         /// </summary>
-        protected string LicensePlate { get; set; }
-        protected DateTime Date { get; set; }
+        public string LicensePlate { get; set; }
+        public DateTime Date { get; set; }
 
         /// <summary>
         /// Public method for the price and vehicleType.
@@ -20,15 +20,14 @@ namespace ClassLibrary
 
         public  decimal Price()
         {
-            return 240;
+            return 125;
 
         }
 
         public string VehicleType()
         {
-            return "Car";
+            return "MC";
         }
 
     }
 }
-
