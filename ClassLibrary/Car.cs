@@ -4,31 +4,24 @@ using System.Text;
 
 namespace ClassLibrary
 {
-    public class Car
+    public class Car : Vehicle
     {
 
-        /// <summary>
-        /// Properties for car class.
-        /// </summary>
-        protected string LicensePlate { get; set; }
-        protected DateTime Date { get; set; }
-
-        /// <summary>
-        /// Public method for the price and vehicleType.
-        /// </summary>
-        /// <returns></returns>
-
-        public  decimal Price()
+        public  double Price()
         {
             return 240;
-
         }
 
-        public string VehicleType()
+
+        public override string VehicleType()
         {
             return "Car";
         }
 
+        public Car(double price, bool brobizz, string licensePlate, DateTime date) : base(price, brobizz, licensePlate, date)
+        {
+        }
     }
 }
+
 

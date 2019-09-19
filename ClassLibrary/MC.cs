@@ -4,30 +4,20 @@ using System.Text;
 
 namespace ClassLibrary
 {
-   public class MC :Car
+    public class MC : Vehicle
     {
+        public override string VehicleType()
+        {
+            return "Motor Cycle";
+        }
 
-        /// <summary>
-        /// Properties for car class.
-        /// </summary>
-        public string LicensePlate { get; set; }
-        public DateTime Date { get; set; }
-
-        /// <summary>
-        /// Public method for the price and vehicleType.
-        /// </summary>
-        /// <returns></returns>
-
-        public  decimal Price()
+        public double Price()
         {
             return 125;
-
         }
 
-        public string VehicleType()
+        public MC(double price, bool brobizz, string licensePlate, DateTime date) : base(price, brobizz, licensePlate, date)
         {
-            return "MC";
         }
-
     }
 }

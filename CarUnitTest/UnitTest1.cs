@@ -1,4 +1,6 @@
 using System;
+using System.Numerics;
+using System.Runtime.ConstrainedExecution;
 using ClassLibrary;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -12,10 +14,11 @@ namespace CarUnitTest
         {
 
             //Arrange
-            Car c = new Car();
+            Car cr = new Car();
 
             //Act
-            decimal actual = c.Price();
+            double actual;
+            actual = cr.Price();
             //Assert
             Assert.AreEqual(240, actual);
         }
@@ -24,14 +27,14 @@ namespace CarUnitTest
         {
 
             //Arrange
-           MC mc =new MC();
+            MC mc = new MC();
 
             //Act
-            decimal actual = mc.Price();
+            double actual = mc.Price();
             //Assert
             Assert.AreEqual(125, actual);
         }
     }
 
-   
+
 }
